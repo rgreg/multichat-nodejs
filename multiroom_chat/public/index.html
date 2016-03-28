@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang='en'>
+<head>
+     <title> Weeby Chat</title>
+     <link rel='stylesheet' href='/stylesheets/style.css'></link>
+     <script src ='/socket.io/socket.io.js' type='text/javascript'> </script>
+     
+    <script src = 'http://code.jquery.com/jquery-1.8.0.min.js' type='text/javascript'> </script>
+    
+    <script src = '/scripts/chat.js' type='text/javascript'> </script>
+    <script src = '/scripts/chatui.js' type='text/javascript'> </script>
+</head>
+<body>
+    <div id ='content'>
+        <div id ='room'></div>
+        <div id ='room-list'></div>
+         <div id ='users'></div>
+        <div id ='messages'></div>
+        <form id = 'send-form'>
+            <input id ='send-message'/>
+            <input id ='send-button' type='submit' value='send'/>
+            <div id = 'help'>
+                Chat commands:
+                <ul>
+                    <li> Change nickname : <code>/nick {username}</code></li>
+                    <li> Join/Create room : <code>/join {roon name}</code></li>
+                  </ul>
+            </div>
+        </form>
+    </div>
+    
+    
+</body>
+    
+    
